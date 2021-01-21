@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* create-user */
+
+#regForm {
+    margin-bottom: 3rem;
+}
+
+#regForm p {
+    position: absolute;
+    margin: 0;
+    margin-top: -2.5rem;
+    padding: 0;
+    color: red;
+}
+
+#regForm #errorCity {
+    margin-left: 20px;
+}
+
+h1 span {
+    font-family: 'Handlee', cursive;
+    color: #20bcd5;
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.large-field {
+    width: 640px;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    padding-left: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.small-field {
+    width: 300px;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    padding-left: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#regForm button {
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #3D37F1;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#regForm button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#zipCode {
+    margin-right: 20px;
+}
+
+#cityLabel {
+    margin-left: 20px;
+}
+
+#city {
+    margin-left: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* user-list */
+
+#body {
+    margin-bottom: 3rem;
+}
+
+.flip {
+    padding: 1rem;
+    cursor: pointer;
+    border: solid 1px lightgray;
+    border-top: 0;
+    transition: all .4s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flip i {
+    font-size: 20px;
+}
+
+.flip p {
+    margin: 0;
+}
+
+.flip:hover {
+    background-color: lightgray;
+    transition: all .4s;
+}
+
+.flip:first-child {
+    border-top: solid 1px lightgray;
+}
+
+.flip-background {
+    background-color: lightgray;
+}
+
+.panel {
+    padding: 1rem;
+    text-align: left;
+    border: solid 1px lightgray;
+    border-top: none;
+}
+
+.panel p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
